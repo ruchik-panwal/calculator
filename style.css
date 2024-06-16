@@ -1,0 +1,43 @@
+body{
+    background-color: #7B9BCA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorBody{
+    background-color: #2C2C2C;
+    height: 800px ;
+    width: 1000px;
+    border-radius: 25px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.brand{
+    font-family: "Michroma";
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+.kasiHo{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.edition{
+    color: white;
+    text-align: end;
+    font-family: Helvetica ;
+}
+
+
+.screen{
+
+}
