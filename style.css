@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #7B9BCA;
     display: flex;
     flex-direction: column;
@@ -6,10 +6,10 @@ body{
     align-items: center;
 }
 
-.calculatorBody{
+.calculatorBody {
     background-color: #2C2C2C;
-    height: 800px ;
-    width: 1000px;
+    height: 700px;
+    width: 700px;
     border-radius: 25px;
     padding: 25px;
 
@@ -17,27 +17,92 @@ body{
     flex-direction: column;
 }
 
-.brand{
+.brand {
     font-family: "Michroma";
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-.kasiHo{
+.kasiHo {
     font-size: 30px;
     font-weight: 900;
 }
 
-.edition{
+.edition {
     color: white;
     text-align: end;
-    font-family: Helvetica ;
+    font-family: Helvetica;
+    margin-bottom: 5px;
 }
 
 
-.screen{
+.screen {
+    background-image: url(images/screen.png);
+    height: 150px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 20px;
+}
 
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.move {
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.forBack{
+background-color: white;
+border-radius: 35px;
+}
+
+.forBackMove{
+    background-color: #2C2C2C;
+}
+
+.forBackInfo{
+    display: flex;
+    justify-content: center;
+
+    font-size: 25px;
+    color: #2C2C2C;=
+}
+
+.fa-solid{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.powerInfo{
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 2px;
+}
+
+.forward,
+.backward,
+.powerOn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.numbersOperand button{
+    height: 30px;
+}
+
+
+.nRow{
+    display: flex;
+    justify-content: space-between;
 }
