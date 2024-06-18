@@ -17,6 +17,7 @@ body {
     width: 600px;
     border-radius: 25px;
     padding: 25px;
+    margin: 50px;
 
     display: flex;
     flex-direction: column;
@@ -103,7 +104,7 @@ body {
 }
 
 .forBackMove {
-    background-color: #2C2C2C;
+    background-color: #252525;
 }
 
 .forBackInfo {
@@ -199,3 +200,11 @@ font-size: 20px;
     margin-bottom: 20px;
 }
 
+
+/* Hover Effect */
+button{
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
