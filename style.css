@@ -53,6 +53,7 @@ body {
     border-style: solid;
     border-color: black;
     margin-bottom: 20px;
+    padding: 5px;
 
     display: flex;
     flex-direction: column;
@@ -81,7 +82,6 @@ body {
     font-size: 110px;
     height: 100px;
     color: white;
-    opacity: 0.1;
     font-family: "digi";
 }
 
@@ -167,7 +167,7 @@ body {
     font-size: 25px;
 }
 
-#pie{
+#percent{
 font-size: 20px;
 }
 
@@ -177,20 +177,9 @@ font-size: 20px;
 
 
 /* Ten Power Button */
-#tenPow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#tenPow .fa-x {
-    font-size: 10px;
-    margin-right: 2px;
-}
-#powX{
-    margin-left: 2px;
-}
-.powX{
-    margin-bottom: 20px;
+
+#nSign {
+    font-size: 20px;
 }
 
 
