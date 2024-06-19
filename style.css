@@ -63,19 +63,27 @@ body {
 
 .sign{
     display: flex;
-    margin-top: 5px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .sign div{
     background-color: white;
+    font-family: "Michroma";
+    font-weight: 900;
+    font-size: 12px;
     opacity: 0.1;
-    width: 18px;
     margin-left: 4px;
     border-radius: 2px;
+    padding: 1px 2px 1px 2px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.position{
+justify-self: left;
 }
 
 .display {

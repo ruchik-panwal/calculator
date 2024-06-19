@@ -1,12 +1,13 @@
 const button = document.querySelectorAll("button");
 const display = document.querySelector(".display");
+let num1 = 0;
+let toggle = 0;
 
 button.forEach((button) => {
     button.addEventListener('mousedown', () => {
 
-
         for (let i = 0; i < 10; i++) {
-            if (button.id == i) {
+            if (button.id === i.toString()) {
                 display.textContent += i;
             }
         }
@@ -35,5 +36,10 @@ button.forEach((button) => {
             display.textContent = "-" + display.textContent;
         }
 
+
+        if(button.id == "plus"){
+            num1 = display.textContent;
+
+        }
     });
 });
