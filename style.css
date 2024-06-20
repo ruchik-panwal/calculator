@@ -10,6 +10,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    user-select: none;
 }
 
 .calculatorBody {
@@ -61,13 +63,13 @@ body {
     justify-content: space-between;
 }
 
-.sign{
+.sign {
     display: flex;
     width: 100%;
     justify-content: flex-end;
 }
 
-.sign div{
+.sign div {
     background-color: white;
     font-family: "Michroma";
     font-weight: 900;
@@ -75,21 +77,24 @@ body {
     opacity: 0.1;
     margin-left: 4px;
     border-radius: 2px;
-    padding: 1px 2px 1px 2px;
+    padding: 1px 4px 1px 4px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.position{
-justify-self: left;
-}
+
 
 .display {
     font-size: 110px;
     height: 100px;
     color: white;
+    font-family: "digi";
+}
+
+.pos {
+    justify-self: left;
     font-family: "digi";
 }
 
@@ -141,7 +146,7 @@ justify-self: left;
     width: 50px;
     border-radius: 50px;
     border-style: solid;
-    background-image: radial-gradient(black , #1c1c1c , black , #1c1c1c , black, #1c1c1c , black, #1c1c1c, black , #1c1c1c , black , #1c1c1c , black, #1c1c1c , black, #1c1c1c);
+    background-image: radial-gradient(black, #1c1c1c, black, #1c1c1c, black, #1c1c1c, black, #1c1c1c, black, #1c1c1c, black, #1c1c1c, black, #1c1c1c, black, #1c1c1c);
 }
 
 
@@ -156,7 +161,8 @@ justify-self: left;
     background-color: black;
 }
 
-.bigMath {
+.bigMath,
+.operator {
     height: 50px;
     width: 100px;
     border-radius: 10px;
@@ -165,7 +171,8 @@ justify-self: left;
     color: white;
 }
 
-.bigMath .fa-solid {
+.bigMath .fa-solid,
+.operator .fa-solid {
     font-size: 20px;
 }
 
@@ -175,11 +182,11 @@ justify-self: left;
     font-size: 25px;
 }
 
-#percent{
-font-size: 20px;
+#percent {
+    font-size: 20px;
 }
 
-#point .fa-solid{
+#point .fa-solid {
     font-size: 8px;
 }
 
@@ -199,9 +206,10 @@ font-size: 20px;
 
 
 /* Hover Effect */
-button{
+button {
     opacity: 0.8;
 }
-button:hover{
+
+button:hover {
     opacity: 1;
 }
