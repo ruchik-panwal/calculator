@@ -38,6 +38,7 @@ function input() {
 
 
             if (toggle == 1) {
+                num1 = display.textContent;
                 display.textContent = "";
                 toggle = 0;
 
@@ -97,9 +98,13 @@ function input() {
                 screenToggle(button.id);
                 toggle = 1;
 
+                
                 console.log(num1);
                 console.log(num2);
             }
+
+            if((display.textContent.length) > 10)
+                display.textContent = (display.textContent).slice(0, 10);
         });
     });
 }
@@ -107,26 +112,29 @@ function input() {
 function screenToggle(sign) {
 
 
-    if (sign == "add") 
+    if (sign == "add")
         plus.setAttribute("style", "opacity : 1;");
-    
-    if (sign == "min") 
+
+    if (sign == "min")
         minus.setAttribute("style", "opacity : 1;");
-    
-    if (sign == "div") 
+
+    if (sign == "div")
         divide.setAttribute("style", "opacity : 1;");
-    
-    if (sign == "mul") 
+
+    if (sign == "mul")
         cross.setAttribute("style", "opacity : 1;");
-    
-    if (sign == "equal") 
+
+    if (sign == "equal")
         equal.setAttribute("style", "opacity : 1;");
-    
-    if (sign == "pow") 
+
+    if (sign == "pow")
         pow.setAttribute("style", "opacity : 1;");
-    
-    if(sign == "sqrt")
+
+    if (sign == "sqrt")
         root.setAttribute("style", "opacity : 1;");
+
+    if (sign == "fact")
+        fact.setAttribute("style", "opacity : 1;");
 
 }
 
@@ -145,10 +153,22 @@ function operate(n1, n2, op) {
         return n1 / n2;
 
     if (op === "equal")
-        return num1;
+        return num2;
 
     if (op === "pow")
         return Math.pow(num1, num2);
+
+    if (op === "fact") {
+        let sum = 1;
+        while (n1 > 0) {
+            sum *= n1;
+            n1--;
+        }
+        return sum;
+    }
+
+    if (op === "sqrt")
+        return Math.sqrt(n1);
 
 
 }
